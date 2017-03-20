@@ -1,0 +1,8 @@
+<%= render 'grab_new' %>
+
+<div class="product-list">
+  <h1>Products</h1>
+  <% @products.each do |product| %>
+    <div><%= product.title %> - $<%= product.price.to_s %> <%= link_to 'show', product_path(product) %></div>
+  <% end %>
+</div>

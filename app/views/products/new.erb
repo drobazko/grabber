@@ -1,0 +1,8 @@
+<div>
+  <h1>Grab New Product</h1>
+  <div class="error"><%= flash[:notice] %></div>
+  <%= form_for @product do |f| %>
+  <%= text_field_tag :product_url, params[:product_url], class: :product %>
+  <%= f.submit "Grab" %>
+  <% end %>
+</div>

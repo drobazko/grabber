@@ -1,0 +1,17 @@
+<%= render 'grab_new' %>
+<script>
+  angular.module('app', []).controller('reviews', ['$scope', function($scope) {
+    $scope.reviews = <%= @product.reviews.map{|r| {
+      user_name: r.user_name, 
+      body: r.body }}.to_json.html_safe %>;
+  }]);
+</script>
+
+<div ng-app="app" ng-controller="reviews">
+  <h1><%= @product.title %> - $<%= @product.price.to_s %></h1>
+  <div><input ng-model="reviewFilter" type="text" name="product_url" placeholder="filter" /></div>
+  <div ng-repeat="review in reviews | filter:{body:reviewFilter}">
+    <div class="user-name">{{review.user_name}}</div>
+    <div>{{review.body}}</div>
+  </div>
+</div>
