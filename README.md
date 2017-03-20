@@ -1,12 +1,12 @@
-== GRABBER :)
+# GRABBER #
 
 ## Notes ##
   * brute-force-like solution :)
   * uniquess of a review is checking in scope of a specific product. Meaning there could be two same reviews related to different products
   * silly review filtering implemented with AngularJS: it allows filtering by single word or by exact match of word sequance
   * at least these products might be grabbed successfully
-    https://www.walmart.com/ip/Ematic-9-Dual-Screen-Portable-DVD-Player-with-Dual-DVD-Players-ED929D/28806789
-    https://www.walmart.com/ip/Philips-PD9012-37-9-inch-LCD-Dual-Screen-Portable-DVD-Player-Black-Certified-Refurbished/141738640
+    * https://www.walmart.com/ip/Ematic-9-Dual-Screen-Portable-DVD-Player-with-Dual-DVD-Players-ED929D/28806789
+    * https://www.walmart.com/ip/Philips-PD9012-37-9-inch-LCD-Dual-Screen-Portable-DVD-Player-Black-Certified-Refurbished/141738640
 
 ## Constraints ##
   * USD is a default currency
