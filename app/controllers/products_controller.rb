@@ -1,7 +1,3 @@
-require 'open-uri'
-require 'nokogiri'
-require 'httparty'
-
 class ProductsController < ApplicationController
   def index
     @products = Product.all

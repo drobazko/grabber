@@ -1,3 +1,5 @@
+require 'open-uri'
+
 class ProductParser
   attr_reader :product_id
 
